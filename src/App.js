@@ -1,28 +1,34 @@
-import React, { Fragment } from "react";
-import {
-  BrowserRouter as Router,
-  HashRouter,
-  Switch,
-  Route,
-} from "react-router-dom";
-import Index from './views/login/Index'
-import "./App.scss";
-export default class App extends React.Component {
-  constructor(params) {
-    super(params);
+import React from "react";
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import "./App.css";
+//引用组件
+import Home from './views/Home';
+import About from './views/About';
+import News from './views/News';
+
+ class App extends React.Component {
+  constructor(props) {
+    super(props);
     this.state = {};
   }
   render() {
     return (
-      <Fragment>
-          <Router>
-            <HashRouter>
-              <Switch>
-                <Route component={Index} exact path="/"></Route>
-              </Switch>
-            </HashRouter>
-          </Router>
-      </Fragment>
-    );
+      <div class="test">
+        <h1>asdas</h1>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+        </ul>npm install react-router-dom --save-dev
+        <BrowserRouter>
+                <Switch>
+                <Route exact component={Home}  path="/"/>
+                <Route component={About}  path="/about"/>
+                <Route component={News}  path="/News"/>
+                </Switch>
+        </BrowserRouter>
+        </div>
+    )
   }
 }
+
+  export default App;
