@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import "./App.css";
+import "./App.scss";
 //引用组件
 import Home from './views/Home';
 import About from './views/About';
@@ -18,7 +18,8 @@ import News from './views/News';
         <ul>
           <li>1</li>
           <li>2</li>
-        </ul>npm install react-router-dom --save-dev
+        </ul>
+             npm  install sass-loader node-sass --save-dev
         <BrowserRouter>
                 <Switch>
                 <Route exact component={Home}  path="/"/>
