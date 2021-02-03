@@ -1,15 +1,37 @@
-import React, { Component } from 'react'
-import './Index.scss'
+import React from 'react'
+import "./index.css"
+
 import LoginForm from './LoginForm'
-export default class Index extends Component {
-    render() {
-        return (
-            <div className="login-back-color"> 
-                <div className="form-box">
-                    <LoginForm />
-                </div>
-                
-            </div>
-        )
+import Register from './registerForm'
+
+class Login extends React.Component{
+  constructor(){
+    super()
+    this.state={
+      formType:"login"
     }
+  }
+
+  switchForm=(value)=>{
+    this.setState({
+      formType:value
+    })
+  }
+
+  render(){
+    return (
+        <div className="p-login">
+          <div className="form-wrap">
+            <div>
+              {
+                this.state.formType === 'login'?<LoginForm switchForm={this.switchForm} />:<Register switchForm={this.switchForm} />
+              }
+            </div>
+          </div>
+        </div>
+    )
+  }
 }
+
+export default Login
+  

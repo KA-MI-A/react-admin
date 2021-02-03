@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import "./App.scss";
+import "./App.css";
 //引用组件
 import Home from './views/Home';
 import About from './views/About';
@@ -18,7 +18,8 @@ import News from './views/News';
         <ul>
           <li>1</li>
           <li>2</li>
-        </ul>
+             yarn add node-sass
+        </ul>npm install node-sass@5.0.0
              npm  install sass-loader node-sass --save-dev
         <BrowserRouter>
                 <Switch>
