@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.css"
 
 import LoginForm from './LoginForm'
-import Register from './registerForm'
+import RegisterForm from './RegisterForm'
 
 class Login extends React.Component{
   constructor(){
@@ -24,7 +24,7 @@ class Login extends React.Component{
           <div className="form-wrap">
             <div>
               {
-                this.state.formType === 'login'?<LoginForm switchForm={this.switchForm} />:<Register switchForm={this.switchForm} />
+                this.state.formType === 'login'?<LoginForm switchForm={this.switchForm} />:<RegisterForm switchForm={this.switchForm} />
               }
             </div>
           </div>
@@ -34,4 +34,3 @@ class Login extends React.Component{
 }
 
 export default Login
-  

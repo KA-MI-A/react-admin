@@ -4,8 +4,8 @@ import {withRouter} from 'react-router-dom'
 import { Form, Input, Button, Row, Col,message } from "antd";
 import { UserOutlined, LockOutlined, CodeOutlined } from "@ant-design/icons";
 
-import { getCode } from "../../api/account";
-import {setToken} from "../../utils/session";
+// import { getCode } from "../../api/account";
+// import {setToken} from "../../utils/session";
 
 class LoginForm extends React.Component {
   constructor() {
@@ -24,7 +24,6 @@ class LoginForm extends React.Component {
     //跳转路由
     console.log(this.props)
     let data="4556456456456456456456456"
-    setToken(data)
     this.props.history.push("/index")
   };
   toggleForm = () => {
@@ -76,7 +75,7 @@ class LoginForm extends React.Component {
       code_button_text:"发送中"
     })
     let params={}
-    getCode(params).then(res=>{
+    .then(res=>{
       //倒计时
       this.state({
         code_button_loading:false,

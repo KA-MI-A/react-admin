@@ -4,7 +4,7 @@ import "./index.css";
 import { Form, Input, Button, Row, Col } from "antd";
 import { UserOutlined, LockOutlined, CodeOutlined } from "@ant-design/icons";
 
-class registerForm extends React.Component {
+class RegisterForm extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -118,4 +118,4 @@ class registerForm extends React.Component {
   }
 }
 
-export default registerForm;
+export default RegisterForm;

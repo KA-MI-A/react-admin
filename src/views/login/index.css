@@ -1,13 +1,8 @@
-.login-back-color{
-     background-color: bisque;
-    height: full-height-and-width;
-    width: full-height-and-width;
-    
-}
-.form-box{
-    width: 300px;
-    display: flex;
-    justify-content: c enter;
-    height: 100vh;
-    margin: auto;
-}
+ .form-wrap{
+      display:flex;
+      width: 300px;
+      height: 100vh;
+      margin: auto;
+      background-color: #5b88e7f3;
+      align-items: center;
+ }
