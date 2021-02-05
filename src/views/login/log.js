@@ -1,5 +1,5 @@
 import React from 'react'
-import "./index.css"
+import "./index.less"
 
 // import LoginForm from './LoginForm'
 // import RegisterForm from './RegisterForm'
@@ -35,8 +35,13 @@ class Login extends React.Component {
       >
         <Form.Item
           name="username"
-          rules={[{ required: true, message: 'Please input your Username!' }]}>
-          <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+          rules={
+            [
+             { required: true, message: '邮箱不能为空' },
+             {type:"email",message:"邮箱格式不正确"}
+            ]
+            }>
+          <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="email" />
         </Form.Item>
         <Form.Item
           name="password"

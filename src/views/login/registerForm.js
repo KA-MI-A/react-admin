@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.less";
 
 import { Form, Input, Button, Row, Col } from "antd";
 import { UserOutlined, LockOutlined, CodeOutlined } from "@ant-design/icons";
