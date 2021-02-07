@@ -23,7 +23,7 @@ class LoginForm extends React.Component {
     // login().then((res) => {});
     //跳转路由
     console.log(this.props)
-    let data="4556456456456456456456456"
+    // let data="4556456456456456456456456"
     this.props.history.push("/index")
   };
   toggleForm = () => {
@@ -55,7 +55,7 @@ class LoginForm extends React.Component {
         this.setState({
           code_button_text:`重新获取`,
           code_button_disabled:false
-        })
+        }) 
       }else{
         this.setState({
           code_button_text:`${sec}S`
@@ -74,7 +74,7 @@ class LoginForm extends React.Component {
       code_button_loading:true,
       code_button_text:"发送中"
     })
-    let params={}
+    // let params={}
     .then(res=>{
       //倒计时
       this.state({
