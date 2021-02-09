@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.less"
 
 import Log from './Log'
-// import LoginForm from './LoginForm'
+import LoginForm from './LoginForm'
 import RegisterForm from './RegisterForm'
 
 class Login extends React.Component{
@@ -20,7 +20,7 @@ class Login extends React.Component{
   }
 
   render(){
-    return (
+    return ( 
         <div className="p-login">
           <div className="form-wrap">
             <div>
@@ -28,8 +28,8 @@ class Login extends React.Component{
                 this.state.formType === 'login'
                 ?
                 <RegisterForm switchForm={this.switchForm} ></RegisterForm>
-                // <LoginForm switchForm={this.switchForm}></LoginForm>
-                :<Log switchForm={this.switchForm}></Log>
+                :<LoginForm switchForm={this.switchForm}></LoginForm>
+                // :<Log switchForm={this.switchForm}></Log>
               }
             </div>
           </div>
