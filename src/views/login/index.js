@@ -1,7 +1,7 @@
 import React from 'react'
 import "./index.less"
 
-import Log from './Log'
+// import Log from './Log'
 import LoginForm from './LoginForm'
 import RegisterForm from './RegisterForm'
 

@@ -2,7 +2,7 @@ import React ,{Component} from 'react'
 
 import {Form,Input,InputNumber,Button,Radio} from 'antd'
 
-import {DepartmentAddd} from '../../api/department'
+import {DepartmentAddd} from '../api/department'
 
 class DepartmentAdd extends Component{
   constructor(props){
@@ -61,4 +61,4 @@ class DepartmentAdd extends Component{
   }
 }
 
-export default DepartmentAdd
+export default DepartmentAdd;
