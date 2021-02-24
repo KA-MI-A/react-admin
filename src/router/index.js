@@ -1,52 +1,105 @@
+import React from 'react'
+import {
+  HomeOutlined,
+  BarChartOutlined,
+  CommentOutlined,
+  UserSwitchOutlined,
+  RobotOutlined,
+  BookOutlined,
+  WhatsAppOutlined,
+  UsergroupAddOutlined,
+  BoxPlotOutlined
+} from '@ant-design/icons'
+
 const Router=[
   {
-    title:"控制台",
-    icon:"home",
-    key:"/index"
+    title:'首页',
+    icon:<HomeOutlined />,
+    path:'/home'
   },
   {
-    title:"用户管理",
-    icon:"laptop",
-    key:"/index/user",
-    child:[
+    title:'文章管理',
+    icon:<BarChartOutlined />,
+    path:'/home/article',
+    children:[
       {
-        key:"/index/user/list",
-        title:"用户列表",
-        icon:""
+        title:'所有文章',
+        icon:'',
+        path:'/home/article/list'
       },
       {
-        key:"/index/user/add",
-        title:"添加用户",
-        icon:""
+        title:'写文章',
+        icon:'',
+        path:'/home/article/write'
+      },
+      {
+        title:'分类目录',
+        icon:'',
+        path:'/home/article/class'
+      },
+      {
+        title:'标签',
+        icon:'',
+        path:'/home/article/tag'
+      },
+    ]
+  },
+  {
+    title:'评论',
+    icon:<CommentOutlined />,
+    path:'/home/comment'
+  },
+  {
+    title:'用户管理',
+    icon:<UserSwitchOutlined />,
+    path:'/home/user',
+  },
+  {
+    title:'系统管理',
+    icon:<RobotOutlined />,
+    path:'/home/system',
+    children:[
+      {
+        title:'账号管理',
+        icon:'',
+        path:'/home/system/user'
+      },
+      {
+        title:'角色管理',
+        icon:'',
+        path:'/home/system/roles'
+      },
+      {
+        title:'权限管理',
+        icon:'',
+        path:'/home/system/auth'
+      },
+      {
+        title:'菜单管理',
+        icon:'',
+        path:'/home/system/menu'
       }
     ]
   },
   {
-    title:"部门管理",
-    icon:"bars",
-    key:"/index/department",
-    child:[
-      {
-        key:"/index/department/list",
-        title:"部门列表",
-        icon:""
-      },
-      {
-        key:"/index/department/add",
-        title:"添加部门",
-        icon:""
-      }
-    ]
+    title:'作品集',
+    icon:<BookOutlined />,
+    path:'/home/prot',
   },
   {
-    title:"请假",
-    icon:"info-circle-o",
-    key:"/index/reduce",
+    title:'留言板',
+    icon:<WhatsAppOutlined />,
+    path:'/home/message',
   },
   {
-    title:"加班",
-    icon:"info-circle-o",
-    key:"/index/add",
+    title:'聊天室',
+    icon:<UsergroupAddOutlined />,
+    path:'/home/room',
+  },
+  {
+    title:'关于',
+    icon:<BoxPlotOutlined />,
+    path:'/home/about'
   },
 ]
 
